@@ -27,6 +27,11 @@ jobs:
 
           
       - name: Run script
+        env:
+          IMAP_SERVER: ${{ secrets.IMAP_SERVER }}
+          EMAIL_ACCOUNT: ${{ secrets.EMAIL_ACCOUNT }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           # 定期実行するファイルを指定。・・・③
           python3 mail_auto.py
