@@ -5,7 +5,7 @@ name: mail_bot
 on:
   schedule:
     # 毎時0分に実行（例：1時間おき）
-    - cron: '0,30 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch: 
 
 jobs:
