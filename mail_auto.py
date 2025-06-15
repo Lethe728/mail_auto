@@ -5,12 +5,10 @@ from dotenv import load_dotenv
 import os
 import requests
 
-load_dotenv("mail_data.env")  # または ".env"
-
-IMAP_SERVER = os.getenv("IMAP_SERVER")
-EMAIL_ACCOUNT = os.getenv("EMAIL_ACCOUNT")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
+IMAP_SERVER = os.environ["IMAP_SERVER"]
+EMAIL_ACCOUNT = os.environ["EMAIL_ACCOUNT"]
+EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
+DISCORD_WEBHOOK_URLL = os.environ["DISCORD_WEBHOOK_URL"]
 
 def get_email_body(msg):
     if msg.is_multipart():
