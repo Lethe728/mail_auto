@@ -5,6 +5,8 @@ on:
     # 定期実行する時間・・・①
     - cron: '*/2 * * * *'
 
+  workflow_dispatch:
+
 jobs:
   build:
     # Ubuntuの最新版環境内で処理を実行することを指定
