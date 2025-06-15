@@ -8,7 +8,7 @@ import requests
 IMAP_SERVER = os.environ["IMAP_SERVER"]
 EMAIL_ACCOUNT = os.environ["EMAIL_ACCOUNT"]
 EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
-DISCORD_WEBHOOK_URLL = os.environ["DISCORD_WEBHOOK_URL"]
+DISCORD_WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
 
 def get_email_body(msg):
     if msg.is_multipart():
