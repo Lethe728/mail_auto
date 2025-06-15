@@ -25,7 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install python-dotenv
           pip install requests
-
           
       - name: Run script
         env:
